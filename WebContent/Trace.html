@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+			<title>Trace</title>
+	<link rel='stylesheet' type='text/css' href='UI.css' />
+	
+	<script type="text/javascript" >  
+			function validate() {
+		var x = document.getElementById("tnum");
+		if(x.value === ""){  
+			alert("Form cannot be blank!");  
+			return false;
+			}	  
+		else if(x.value.length < 6)
+			{
+				alert("Must be 6 characters in length");
+				return false;
+			}  
+			
+			else(x.value.length ==6 || x.value.length >6)
+			{
+				return true;
+			}
+		}  
+	</script>
+	
+	</head>
+
+		<body>
+		<div id ='head'>
+			<div id='name'>
+			   <a href = "index.html"><img src = "logo-packages.png" style="width: 150px; height: 120px;"></a>
+         	   <h1><b>PACKAGE</b></h1>
+			   <h1><b>A</b></h1>
+			   <h1><b>L</b></h1><br/>
+					<div id = 'banner'>
+						<hp>Special Handling.</hp>
+						<hp>Extra Service</hp>
+					</div>
+			
+			
+			<div id='pack'>
+                        <a href="Trace.html"><button id = "left">Trace a Shipment</button></a>
+                        <a href="Create.html"><button>Create a Shipment</button></a>
+                        <a href="Claim.html"><button id ="right">Claim</button></a>
+			</div>
+		</div>
+		</div>
+		<div id = 'body'>
+        <p>To trace a sent package</p>
+		<form id = "trace">
+		<p>Enter tracking number: </p><input type = "text" id ="tnum" ">
+		</form>
+		<a href = "Info.html"><input type = "button" value = "submit" onclick = "return validate()" ></a>
+		</form>
+		</div>
+	</body>
+</html>

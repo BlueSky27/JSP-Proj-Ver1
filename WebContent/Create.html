@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+			<title>Create a Shipment</title>
+	<link rel='stylesheet' type='text/css' href='UI.css' />
+	</head>
+
+	<body>
+		<div id ='head'>
+			<div id='name'>
+			   <a href = "index.html"><img src = "logo-packages.png"></a>
+         	   <h1><b>PACKAGE</b></h1>
+			   <h1><b>A</b></h1>
+			   <h1><b>L</b></h1><br/>
+					<div id = 'banner'>
+						<hp>Special Handling.</hp>
+						<hp>Extra Service</hp>
+					</div>
+			
+			
+			<div id='pack'>
+                        <a href="Trace.html"><button id = "left">Trace a Shipment</button></a>
+                        <a href="Create.html"><button>Create a Shipment</button></a>
+                        <a href="Claim.html"><button id ="right">Claim</button></a>
+			</div>
+		</div>
+		
+		
+		<div id = 'bodyc'>
+		<span>
+		<form action="CreateS.jsp">  
+		
+			<input type="radio" name="medium" value="Air"><img src = "plane.png"/> Air Cargo <br>
+			<input type="radio" name="medium" value="Sea"><img src = "sea9.png"/> Sea Cargo	<br>
+			<input type="radio" name="medium" value="Land"><img src = "land.png"/> Land Delivery<br>
+
+			Origin:   <input type=text name='a'><br> 
+			Destination:   <input type=text name='b'><br>
+			Type of Package:   <input type=text name='c'><br>
+			No. of Items:   <input type=text name='d'><br>
+			Estimated Weight:    <input type=text name='e'><br>
+			<input type="submit" value="Create"><br>
+		</form>
+		</span>
+			</div>
+	</body>
+</html>

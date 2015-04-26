@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+			<title>Welcome to Package Pal</title>
+	<link rel='stylesheet' type='text/css' href='UI.css' />
+  
+	<script type="text/javascript">
+		function validate()
+		{
+			if(document.login.uname.value == "")
+			{
+				alert("Forms cannot be blank!");
+				return false;
+			}
+			else if(document.login.pword.value == "")
+			{
+				alert("Forms cannot be blank!");
+				return false;
+			}
+			else
+			{
+				return true;
+			}
+		}
+}
+	</script>
+  
+	</head>
+
+		<body>
+			<div id ='head'>
+			<div id='name'>
+			   <a href = "index.html"><img src = "logo-packages.png" style="width: 150px; height: 120px;"></a>
+         	   <h1><b>PACKAGE</b></h1>
+			   <h1><b>A</b></h1>
+			   <h1><b>L</b></h1><br/>
+					<div id = 'banner'>
+						<hp>Special Handling.</hp>
+						<hp>Extra Service</hp>
+					</div>
+			
+			
+			<div id='pack'>
+                        <a href="Trace.html"><button id = "left">Trace a Shipment</button></a>
+                        <a href="Create.html"><button>Create a Shipment</button></a>
+                        <a href="Claim.html"><button id ="right">Claim</button></a>
+			</div>
+		</div>
+		</div>
+		<div id = 'bodyi'>
+            <div id = 'ppal'>
+				<p>
+					Package Pal offers tracking and status checking. 
+				</p>
+			</div>
+			<div id = 'login'>
+                <h3>Enter login information</h3><br>
+				<form name = "login">
+                Username: <input type=text name="uname"><br>
+                Password: <input type=password name = "pword"><br>
+				</form>
+				<br>
+                <a href = "profile.html"><input type="submit" onclick = "return validate()"><br></a>
+				<br>
+                <lp>Not registered yet? Click <a href = "Register.html" ><span>here</span></a> to register.</lp>
+            </div>
+		</div>		
+		</form>
+	</body>
+</html>
